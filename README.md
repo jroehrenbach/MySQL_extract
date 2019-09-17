@@ -18,16 +18,11 @@ query_dict1 is an example for the query_dict which will be passed when calling p
 
 ### members of query_dict: (as in queries.json)
 
-"columns":
-
+"columns":<br />
 list of column names which should be extracted
 
-
-"table":
-
+"table":<br />
 Name of table which data should be extracted from
 
-
-"rules": (optional)
-
+"rules": (optional)<br />
 dict of further operations like sorting or skimming
