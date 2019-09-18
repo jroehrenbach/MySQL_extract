@@ -5,8 +5,11 @@ The dicts for querying the desired data are stored in queries.json and can be ad
 
 ### Requirements
 Python 3.6
+<br />
 pandas
+<br />
 pymysql
+<br />
 json
 <br /><br />
 
