@@ -55,7 +55,7 @@ class pymysql_wrapper(object):
             return True
         
         except Exception as e:
-            print(e)
+            print(*e.args)
             raise IOError("could not connect to data base")
     
     
@@ -76,7 +76,8 @@ class pymysql_wrapper(object):
             self._connection.close()
             self._connected = False
             return True
-        except:
+        except Exception as e:
+            print(*e.args)
             return False
     
     
@@ -100,12 +101,14 @@ class pymysql_wrapper(object):
         
         try:
             self._cursor.execute(sql_string)
-        except:
+        except Exception as e:
+            print(*e.args)
             raise IOError("could not execute sql_string >%s" % sql_string)
         
         try:
             data = self._cursor.fetchall()
-        except:
+        except Exception as e:
+            print(*e.args)
             raise IOError("could not fetch data")
             
         # tuple to list

@@ -15,10 +15,10 @@ import json
 def main():
     
     #> enter arguments for pymysql.connect...
-    host = "localhost"
+    host = "47.95.243.17"
     user = "root"
-    passwd = "pwd"
-    db_name = "database_name"
+    passwd = "Abc123456"
+    db_name = "result"
     
     # wrapper object for pymysql (also connects to database)
     db = pymysql_wrapper(host, user, passwd, db_name)
