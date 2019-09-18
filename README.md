@@ -3,6 +3,13 @@ Extract data from a MySQL data base using dicts as queries.
 The dicts for querying the desired data are stored in queries.json and can be adapted easily (see below: queries.json).
 <br /><br />
 
+### Requirements
+Python 3.6
+pandas
+pymysql
+json
+<br /><br />
+
 ### wrapper.py
 This script contains wrapper class pymysql_wrapper.
 <br /><br />
