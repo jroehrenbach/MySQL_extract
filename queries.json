@@ -1,9 +1,9 @@
 {
     "query1": {
-        "table": "lib_admin_gov",
-        "columns": ["town"],
+        "table": "table1",
+        "columns": ["A","B"],
         "rules": {
-            "order by char_length(%s)": "town"
+            "order by char_length(%s)": "A"
         }
     }
 }
